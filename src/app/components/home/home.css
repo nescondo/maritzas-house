@@ -1,0 +1,7 @@
+.photo {
+    display: flex;
+    border-radius: 360px;
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 20%;
+}

@@ -1,6 +1,11 @@
-<h1 class="title">Maritza's House</h1>
-<div class="btns">
-    <button routerLink="" type="button" class="transparent-btn">Home</button>
-    <button routerLink="/aboutus" type="button" class="transparent-btn">About Us</button>
-    <button routerLink="/contactinfo" type="button" class="transparent-btn">Contact Info</button>
-</div>
+<div class="background">
+    <div class="title">
+        <img src="imgs/home.png" width="50" height="50">
+        <a>Maritza's House</a>
+    </div>
+    <div class="btns">
+        <button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" type="button" class="transparent-btn">Home</button>
+        <button routerLink="/aboutus" routerLinkActive="active-link" type="button" class="transparent-btn">About Us</button>
+        <button routerLink="/contactinfo" routerLinkActive="active-link" type="button" class="transparent-btn">Contact Info</button>
+    </div>
+</div> 
