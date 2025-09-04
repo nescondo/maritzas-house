@@ -3,7 +3,8 @@
   padding-top: 20px;
   flex-direction: row;
   justify-content: space-between;
-  background-color: hsla(0, 0%, 99%, 0.986); box-shadow: 0 30px 40px rgba(0,0,0,.1);
+  background-color: hsla(0, 0%, 99%, 0.986); 
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
 }
 
 .title {
@@ -14,30 +15,16 @@
   gap: 15px;
 }
 
-.transparent-btn {
-  background: transparent;
-  border: none;
+.btn {
   padding: 10px 16px;
   cursor: pointer;
-  border-radius: 16px;
-  transition: background-color 0.8s ease;
   font-family: inherit;
   font-size: 24px;
 }
 
-.transparent-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: black;
-}
-
-.transparent-btn.active-link {
-  text-decoration: underline;
-  text-decoration-color: rgb(185, 185, 185);
-  text-underline-offset: 6px;
-}
-
-.btns {
+.all-btns {
   display: flex;
   align-items: center;
   margin-top: 32px;
+  margin-right: 16px;
 }

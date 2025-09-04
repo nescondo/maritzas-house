@@ -3,9 +3,18 @@
         <img src="imgs/home.png" width="50" height="50">
         <a>Maritza's House</a>
     </div>
-    <div class="btns">
-        <button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" type="button" class="transparent-btn">Home</button>
-        <button routerLink="/aboutus" routerLinkActive="active-link" type="button" class="transparent-btn">About Us</button>
-        <button routerLink="/contactinfo" routerLinkActive="active-link" type="button" class="transparent-btn">Contact Info</button>
+    <div class="all-btns">
+        <nav #nav class="relative flex space-x-6">
+            <button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" type="button" class="btn px-4 py-2">Home</button>
+            <button routerLink="/aboutus" routerLinkActive="active-link" type="button" class="btn px-4 py-2">About Us</button>
+            <button routerLink="/contactinfo" routerLinkActive="active-link" type="button" class="btn px-4 py-2">Contact Info</button>
+            
+            <!-- Dynamic underline element -->
+            <div
+                class="absolute bottom-1.5 h-0.5 bg-gray-500 transition-all duration-300 ease-out -mt-3"
+                [style.width]="underlineStyle.width"
+                [style.transform]="underlineStyle.transform">
+            </div>
+        </nav>
     </div>
 </div> 
